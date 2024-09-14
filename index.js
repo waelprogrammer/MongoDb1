@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchResult = document.getElementById('searchResult');
     let data = [];
 
-    async function sendStudentDataToAPI(student, method = 'POST', url = 'http://localhost:1233/addstudent') {
+    async function sendStudentDataToAPI(student, method = 'POST', url = 'https://mongodb1-arum.onrender.com') {
         try {
             const response = await fetch(url, {
                 method: method,
