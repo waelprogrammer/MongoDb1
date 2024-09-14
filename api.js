@@ -3,11 +3,12 @@ import { config } from 'dotenv';
 import { insertStudent, deleteStudent, updateStudent } from './index1.js';
 import cors from 'cors';
 
+
 config();
 const app = express();
 app.use(express.json());
 app.use(cors());
-
+const PORT = process.env.PORT || 1000;
 app.get("/", (req, res) => {
     res.send("API is working");
 });
@@ -41,6 +42,4 @@ app.delete('/deletestudent', async (req, res) => {
     }
 });
 
-app.listen(process.env.PORT, () => {
-    console.log(`Server running on port ${process.env.PORT}`);
-});
+
