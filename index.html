@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Management</h1>
+        <form id="studentForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" required>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+
+            <button type="button" id="addStudentButton">Add Student</button>
+        </form>
+        <div id="studentList">
+            <h2>Student List</h2>
+            <ul id="studentUl"></ul>
+        </div>
+        <div id="searchSection">
+            <h2>Search Student</h2>
+            <label for="searchName">Name:</label>
+            <input type="text" id="searchName" name="searchName">
+            <button type="button" id="searchButton">Search</button>
+            <p id="searchResult"></p>
+        </div>
+    </div>
+    <script src="test.js"></script>
+</body>
+</html>
